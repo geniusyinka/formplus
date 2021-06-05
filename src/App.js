@@ -1,25 +1,29 @@
+import {react, useEffect} from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Search from './Components/Search'
+import Sort from './Components/Sort';
+import Message from './Components/Message';
+import Templates from './Components/Templates';
+import "./index.css"
+import Api, { getTemplates } from './Components/Api'
+import { State } from './Components/State';
+import Template from './Components/Template';
+import Temps from './Components/Temps';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    return ( 
+    <div>
+        <State>
+            <div className="container pt-8">
+                {/* <Search/> */}
+                {/* <Template/> */}
+                <Templates className="mt-8 mb-8"/>
+            </div>
+        </State>
     </div>
-  );
+    );
 }
 
 export default App;
