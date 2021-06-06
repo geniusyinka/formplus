@@ -34,7 +34,7 @@ const Templates = (props) => {
       // Logic for displaying current todos
       const indexOfLastTemplate = currentPage * templatesPerPage;
       const indexOfFirstTemplate = indexOfLastTemplate - templatesPerPage;
-      const currentTemplate = searchData.slice(indexOfFirstTemplate, indexOfLastTemplate);
+      const currentTemplate = template.slice(indexOfFirstTemplate, indexOfLastTemplate);
 
       //rendering paginated data
       const renderTemplates = currentTemplate.map((datas, i) => {
