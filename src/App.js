@@ -16,9 +16,7 @@ function App() {
     return ( 
     <div>
         <State>
-            <div className="container pt-8">
-                {/* <Search/> */}
-                {/* <Template/> */}
+            <div className="container text-center sm:text-left pt-8">
                 <Templates className="mt-8 mb-8"/>
             </div>
         </State>
