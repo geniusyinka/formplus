@@ -19,7 +19,7 @@ export const State = props => {
             //console.log(data);
         })
         .catch(error => {
-            console.log('Error getting fake data: ' + error);
+            console.log('Error getting data: ' + error);
             })  
     },[])
 
