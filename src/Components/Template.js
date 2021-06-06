@@ -17,9 +17,6 @@ function Template(props) {
                 <p className="templateBody mt-5 px-4 py-2 pr-">
                     {props.desc}
                 </p>
-                <h1 className="templateBody mt-5 px-4 py-2 pr-">
-                    {props.cat}
-                </h1>
                 <div className="grey-footer mt-5 pl-px appearance-none w-full block ">
                     <p className="footer-text px-4 py-2 pr-0 font-bold">
                         Use Template
